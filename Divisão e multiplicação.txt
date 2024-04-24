@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class Multiplicacao {
+    public static void main(String[] args) {
+        float resultadoMultiplicacao;
+        Scanner dados = new Scanner(System.in);
+        
+        System.out.println("Digite o primeiro número:");
+        float primeiroNumero = dados.nextFloat();
+        
+        System.out.println("Digite o segundo número:");
+        float segundoNumero = dados.nextFloat();
+        
+        resultadoMultiplicacao = primeiroNumero * segundoNumero;
+        
+        System.out.println("O resultado da multiplicação de " + primeiroNumero + " * " + segundoNumero + " é igual a " + resultadoMultiplicacao);
+    }
+}
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+import java.util.Scanner;
+
+public class Divisao {
+    public static void main(String[] args) {
+        float resultadoDivisao;
+        Scanner dados = new Scanner(System.in);
+        
+        System.out.println("Digite o primeiro número:");
+        float primeiroNumero = dados.nextFloat();
+        
+        System.out.println("Digite o segundo número:");
+        float segundoNumero = dados.nextFloat();
+        
+        if (segundoNumero == 0) {
+            System.out.println("Não é possível dividir por zero.");
+        } else {
+            resultadoDivisao = primeiroNumero / segundoNumero;
+            System.out.println("O resultado da divisão de " + primeiroNumero + " / " + segundoNumero + " é igual a " + resultadoDivisao);
+        }
+    }
+}
